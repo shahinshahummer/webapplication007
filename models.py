@@ -31,7 +31,7 @@ class Invoice(db.Model):
     customer_id = db.Column(db.Integer, db.ForeignKey('invoice_customer.id'))
 
 def create_db():
-    db.create.all()
+    db.create_all()
     
 def main():
     create_db()
